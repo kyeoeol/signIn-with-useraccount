@@ -82,3 +82,19 @@ struct SignInAPI {
     }
 }
 ```
+
+#### Example
+```swift
+private func signIn() {
+    guard let id = idInputField.text else { return }
+    guard let password = idInputField.text else { return }
+    SignInAPI.signIn(id: id, password: password) { accessToken, error in
+        guard error == nil else {
+            self.showAlert(message: "로그인에 실패했습니다.")
+            return
+        }
+        /// do something with accessToken...
+        self.showAlert(message: "로그인 성공")
+    }
+}
+```
