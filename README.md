@@ -31,10 +31,10 @@ override func viewDidLoad() {
                                            selector: #selector(adjustInputView(_:)),
                                            name: UIResponder.keyboardWillShowNotification,
                                            object: nil)
-   NotificationCenter.default.addObserver(self,
-                                          selector: #selector(adjustInputView(_:)),
-                                          name: UIResponder.keyboardWillHideNotification,
-                                          object: nil)
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(adjustInputView(_:)),
+                                           name: UIResponder.keyboardWillHideNotification,
+                                           object: nil)
 }
 
 @objc private func adjustInputView(_ notification: Notification) {
