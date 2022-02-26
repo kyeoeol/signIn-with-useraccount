@@ -1,4 +1,4 @@
-# Sign In With User Account
+# Sign In With UserAccount
 Sign In using the registered user ID and password.
 
 ## Settings
